@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>Anaconda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+           
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pakaian</a></li>
+                    <li><a href="#">Jaket</a></li>
+                    <li><a href="#">Celana</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="informasi">
+            <div class="overlay"></div>
+            <img src="img/foto1.jpg" class="lance">
+            <div id="circle">
+                <div class="feature one">
+                    
+                    <div>
+                        <h1>About Us</h1>
+                        <p>Kami menyediakan beberapa jenis kategori barang</p>
+                        <p>Owner: Mela Imroatus</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    
+                    <div>
+                        <h1>Pakaian</h1>
+                        <p>Pakaian dengan harga terjangkau dan kualitas tidak meragukan</p>
+                        <p>Beraneka macam model terbaru</p>
+                        <p>Silahkan cek selengkapnya biar ngga ketinggalan koleksi terbaru kami</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                   
+                    <div>
+                        <h1>Jaket</h1>
+                        <p>Banyak jaket-jaket kece buat melengkapi outfit kalian</p>
+                        <p>Segera cek, biar ngga ketinggalan</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    
+                    <div>
+                        <h1>Celana</h1>
+                        <p>Bingung Celana?</p>
+                        <p>Jangan khawatir disini banyak pilihan yang bisa kalian pilih</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <img src="img/arrow.png" id="up">
+            <h3>INFO</h3>
+            <img src="img/arrow.png" id="down">
+        </div>
+    
+    </div>
+
+    <script>
+        var circle = document.getElementById("circle");
+        var up = document.getElementById("up");
+        var down = document.getElementById("down");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        up.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        down.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+# Tugas2-JavaScript-jQuery
+Tugas 2 Pemrograman Web
+Nama : Mela Imroatus Solikhah
+NIM : 20050974002
+KELAS : PTI 2020 B
